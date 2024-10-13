@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+       // Find the "Add Note" button by its ID from the layout file
         Button addNoteButton = findViewById(R.id.addNoteButton);
 
         addNoteButton.setOnClickListener(v -> {

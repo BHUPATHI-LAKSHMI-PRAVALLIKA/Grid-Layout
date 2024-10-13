@@ -9,10 +9,10 @@
         android:id="@+id/addNoteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Note" />
+        android:text="Add a Note" />
 
     <ListView
-        android:id="@+id/notesListView"
+        android:id="@+id/noteListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
