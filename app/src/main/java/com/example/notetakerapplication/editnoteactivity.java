@@ -35,6 +35,7 @@ public class editnoteactivity extends AppCompatActivity {
 
 
     @Override
+    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editnoteactivity);
@@ -56,6 +57,7 @@ public class editnoteactivity extends AppCompatActivity {
 
         msaveeditnote.setOnClickListener(new View.OnClickListener() {
             @Override
+            
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(),"savebuton click",Toast.LENGTH_SHORT).show();
 
@@ -75,12 +77,14 @@ public class editnoteactivity extends AppCompatActivity {
                     note.put("content",newcontent);
                     documentReference.set(note).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
+                        
                         public void onSuccess(Void aVoid) {
                             Toast.makeText(getApplicationContext(),"Note is updated",Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(editnoteactivity.this, NotesActivity.class));
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
+                        
                         public void onFailure(@NonNull Exception e) {
                             Toast.makeText(getApplicationContext(),"Failed To update",Toast.LENGTH_SHORT).show();
                         }
@@ -98,6 +102,7 @@ public class editnoteactivity extends AppCompatActivity {
     }
 
     @Override
+    
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if(item.getItemId()==android.R.id.home)
