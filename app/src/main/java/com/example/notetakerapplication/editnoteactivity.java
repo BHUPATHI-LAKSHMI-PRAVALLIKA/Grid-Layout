@@ -103,7 +103,7 @@ public class editnoteactivity extends AppCompatActivity {
 
     @Override
     
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if(item.getItemId()==android.R.id.home)
         {
